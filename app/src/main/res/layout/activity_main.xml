@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/stop_measure"
+        android:layout_alignParentTop="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text"
+            android:text="TextView"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            />
+    </ScrollView>
+    <Button
+        android:id="@+id/start_measure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:text="Start Measure"/>
+    <Button
+        android:id="@+id/stop_measure"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_above="@+id/start_measure"
+        android:text="Stop Measure"/>
+</RelativeLayout>
